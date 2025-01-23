@@ -23,7 +23,6 @@ $(document).ready(function(){
     });
 
     $('.navbar .menu li a').click(function(){
-        // applying again smooth scroll on menu items click
         $('html').css("scrollBehavior", "smooth");
     });
 
@@ -48,7 +47,7 @@ $(document).ready(function(){
         loop: true
        
     });
-    // owl carousel script
+   
     $('.carousel').owlCarousel({
         margin: 20,
         loop: true,
@@ -73,18 +72,15 @@ $(document).ready(function(){
 });
 
 function sendEmail(){
-    emailjs.send("service_j9oc7j5","template_7y1s9jb",{
-        name: document.getElementById("name").value,
-        email: document.getElementById("email").value,
-        mobile: document.getElementById('mobile').value,
-        subject: document.getElementById("subject").value,
-        message: document.getElementById("message").value,
-        }).then(function() {
-            alert('SUCCESS!');
-        }, function(error) {
-            alert('FAILED...', error);
-        });
-
-
-
+        emailjs.send("service_j9oc7j5","template_7y1s9jb",{
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            mobile: document.getElementById('mobile').value,
+            subject: document.getElementById("subject").value,
+            message: document.getElementById("message").value,
+            }).then(function() {
+                alert('SUCCESS!');
+            }, function(error) {
+                alert('FAILED...', error);
+            });
 }

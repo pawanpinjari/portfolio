@@ -386,28 +386,28 @@ section{
     width: 90%;
 }
 .skills-content .left .js::before{
-    width: 80%;
+    width: 100%;
 }
 .skills-content .left .react::before{
-    width: 80%;
+    width: 100%;
 }
 .skills-content .left .jquery::before{
-    width: 50%;
+    width: 80%;
 }
 .skills-content .right .nodejs::before{
     width: 90%;
 }
 .skills-content .right .expressjs::before{
-    width: 80%;
+    width: 90%;
 }
 .skills-content .right .mongodb::before{
     width: 100%;
 }
 .skills-content .right .php::before{
-    width: 50%;
+    width: 90%;
 }
 .skills-content .right .mysql::before{
-    width: 70%;
+    width: 90%;
 }
 .skills-content h3{
     color: #00ff00;
@@ -534,7 +534,7 @@ section{
 }
 .slider{
     display: flex;
-    overflow-y: auto;
+    overflow-x: auto;
     aspect-ratio: 16/9;
     scroll-snap-type: mandatory;
     scroll-behavior: smooth;
@@ -879,7 +879,7 @@ footer .social-icon{
         margin-left: 0;
     }
 
-    .calculator,.tictactoe,.movie,.job{
+    .calculator,.tictactoe,.food,.job{
         position: static;
         display: grid;
         grid-template-columns: auto;
